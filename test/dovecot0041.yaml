@@ -1,8 +1,7 @@
 pattern: DOVECOT
-data: "imap(username@example.com): Connection closed test in=4205 out=11509"
+data: "auth: Warning: auth client 0 disconnected with 2 pending requests: Connection reset by peer"
 results:
-        proto: "imap"
-        dovecot_user: "username@example.com"
-        conn_status: "Connection closed test"
-        bytes_in: 4205
-        bytes_out: 11509
+        proto: "auth"
+        level: "Warning"
+        conn_status: "auth client 0 disconnected with 2 pending requests"
+        status_message: "Connection reset by peer"

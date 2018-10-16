@@ -86,4 +86,8 @@ DOVECOT_LMTP %{WORD:proto}\(%{DATA:dovecot_user}\): (%{WORD:session}: )?(msgid=<
 # 37  indexer-worker(username): Indexed 10 messages in mail/Sent Messages
 DOVECOT_INDEXER %{WORD:proto}-worker\(%{DATA:dovecot_user}\): Indexed %{NUMBER:msg_count} messages in %{GREEDYDATA:folder}
 
-DOVECOT (%{DOVECOT_LOGIN}|%{DOVECOT_DISCONNECT}|%{DOVECOT_PROXY}|%{DOVECOT_INDEXER}|%{DOVECOT_LMTP}|%{DOVECOT_EXCEEDED})
+### Auth
+# 38 auth: Warning: auth client 0 disconnected with 2 pending requests: Connection reset by peer
+DOVECOT_AUTH %{WORD:proto}: %{WORD:level}: %{GREEDYDATA:conn_status}: %{GREEDYDATA:status_message}
+
+DOVECOT (%{DOVECOT_LOGIN}|%{DOVECOT_DISCONNECT}|%{DOVECOT_PROXY}|%{DOVECOT_INDEXER}|%{DOVECOT_LMTP}|%{DOVECOT_EXCEEDED}|%{DOVECOT_AUTH})
