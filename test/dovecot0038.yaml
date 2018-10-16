@@ -1,12 +1,12 @@
 pattern: DOVECOT
-data: "pop3-login: Aborted login (auth failed, 1 attempts): user=<username>, method=PLAIN, rip=2.2.2.2, lip=5.5.5.5, secured, session=<23hKXMAPuwBZ1MSq>"
+data: "imap-login: Aborted login (auth failed, 1 attempts): user=<username>, method=PLAIN, rip=2.2.2.2, lip=5.5.5.5, TLS: Disconnected, session=<23hKXMAPuwBZ1MSq>"
 results:
-        proto: "pop3"
+        proto: "imap"
         conn_status: "Aborted login"
         status_message: "auth failed, 1 attempts"
         dovecot_user: "username"
         method: "PLAIN"
         rip: 2.2.2.2
         lip: 5.5.5.5
-        crypto: "secured"
+        crypto: "TLS: Disconnected"
         session: "23hKXMAPuwBZ1MSq"

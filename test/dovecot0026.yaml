@@ -3,7 +3,7 @@ data: "imap-login: proxy(username): started proxying to 2.2.2.2:143: user=<usern
 results:
         proto: "imap"
         proxy: "proxy"
-        user: "username"
+        dovecot_user: "username"
         proxy_start: "proxying"
         proxyto_host: "2.2.2.2"
         proxyto_port: "143"

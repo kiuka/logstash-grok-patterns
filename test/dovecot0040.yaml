@@ -1,0 +1,8 @@
+pattern: DOVECOT
+data: "imap(username@example.com): Connection closed (IDLE running for 0.001 + waiting input for 1127.548 secs, 2 B in + 10+0 B out, state=wait-input) in=4205 out=11509"
+results:
+        proto: "imap"
+        dovecot_user: "username@example.com"
+        conn_status: "Connection closed (IDLE running for 0.001 + waiting input for 1127.548 secs, 2 B in + 10+0 B out, state=wait-input)"
+        bytes_in: 4205
+        bytes_out: 11509

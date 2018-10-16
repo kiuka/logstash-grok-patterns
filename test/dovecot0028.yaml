@@ -3,7 +3,7 @@ data: "pop3-login: proxy(username): disconnecting 2.2.2.2 (Disconnected by serve
 results:
         proto: "pop3"
         proxy: "proxy"
-        user: "username"
+        dovecot_user: "username"
         conn_status: "disconnecting"
         status_message: "Disconnected by server"
         method: "PLAIN"

@@ -3,7 +3,7 @@ data: "imap-login: proxy(username): disconnecting 2.2.2.2 (Disconnected by clien
 results:
         proto: "imap"
         proxy: "proxy"
-        user: "username"
+        dovecot_user: "username"
         conn_status: "disconnecting"
         status_message: "Disconnected by client: Connection reset by peer"
         method: "PLAIN"

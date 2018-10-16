@@ -1,0 +1,8 @@
+pattern: DOVECOT
+data: "imap(username@example.com): Connection closed test in=4205 out=11509"
+results:
+        proto: "imap"
+        dovecot_user: "username@example.com"
+        conn_status: "Connection closed test"
+        bytes_in: 4205
+        bytes_out: 11509
